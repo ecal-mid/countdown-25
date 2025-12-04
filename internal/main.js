@@ -1,6 +1,6 @@
 import {
-  SequenceRunner,
-  loadSequenceMetadata,
+	SequenceRunner,
+	loadSequenceMetadata,
 } from "./sequenceRunner.js";
 
 import { initMenu, initTransitionUI } from "./sequenceRunnerUI.js";
@@ -8,24 +8,22 @@ import { initMenu, initTransitionUI } from "./sequenceRunnerUI.js";
 
 const sequenceResponse = await fetch("./sequence.json")
 let sequenceData
-try{
+try {
 
 	const sequence = await sequenceResponse.json()
 	sequenceData = await loadSequenceMetadata(sequence)
 }
-catch(e)
-{
+catch (e) {
 	console.error("Can't parse sequence.json, error:", e)
 }
 
-if(sequenceData)
-{
+if (sequenceData) {
 
 	sequenceData.forEach(s => {
-	  let nextNum = Number.parseInt(s.content) - 1
-	  if (nextNum < 0)
-	    nextNum = 3
-	  s.nextContent = nextNum.toString()
+		let nextNum = Number.parseInt(s.content) - 1
+		if (nextNum < 0)
+			nextNum = 3
+		s.nextContent = nextNum.toString()
 	})
 
 	//console.log(sequenceData);
@@ -35,5 +33,5 @@ if(sequenceData)
 	initTransitionUI(runner)
 
 	runner.restart()
-	
+
 }

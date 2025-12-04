@@ -27,6 +27,14 @@ export function createIframeClient() {
         );
     }
 
+
+    window.addEventListener("keydown", (event) => {
+        if (event.key === "n")
+            sendFinishSignal();
+    }, {
+        capture: true
+    });
+
     function sendFinishSignal() {
         console.log("sketch finished, starting the next one.");
         window.parent.postMessage("finished", "*");

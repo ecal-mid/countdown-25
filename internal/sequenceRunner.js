@@ -47,6 +47,11 @@ export class SequenceRunner extends EventTarget {
 
   async activatePreloaded() {
 
+    if (!this.preloadedSequence) {
+      console.warn("no preloaded sequence to activate")
+      return;
+    }
+
 
     if (this.currentSequence) {
       this.main.removeChild(this.currentSequence.iframe);

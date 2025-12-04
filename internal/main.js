@@ -24,6 +24,7 @@ if (sequenceData) {
 		if (nextNum < 0)
 			nextNum = 3
 		s.nextContent = nextNum.toString()
+		s.author = s.author ?? "unknown";
 	})
 
 	//console.log(sequenceData);

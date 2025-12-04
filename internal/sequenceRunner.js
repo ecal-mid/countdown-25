@@ -9,6 +9,22 @@ async function loadIframe(url, target) {
   });
 }
 
+function getFilterFromUrl() {
+  // split hash into elements (works with any number of hash parameters)
+  const hashElements = window.location.hash.substring(1).split("&")
+  for (const element of hashElements) {
+    if (element.startsWith("filter=")) {
+      const hashFilter = decodeURIComponent(element.substring(7))
+      if (hashFilter.length > 0) {
+        console.log("found filter in url hash:", hashFilter)
+        return hashFilter
+      }
+
+    }
+  }
+  return undefined
+}
+
 export class SequenceRunner extends EventTarget {
 
   sequencesFiltered;
@@ -25,7 +41,13 @@ export class SequenceRunner extends EventTarget {
     this.sequences = sequences
     this.startContent = startContent
 
-    this.setFilter(undefined)
+
+    window.onpopstate = (event) => {
+      this.setFilter(getFilterFromUrl())
+      this.restart()
+    }
+
+    this.setFilter(getFilterFromUrl())
 
     window.addEventListener(
       "message",
@@ -102,6 +124,10 @@ export class SequenceRunner extends EventTarget {
     this.sequencesFiltered = this.sequences
       .filter((seq) => this.currentFilter == undefined || seq.author === this.currentFilter)
       .map(seq => Object.assign({}, seq, { count: 0 }))
+
+    const hash = filter ? `#filter=${encodeURIComponent(filter)}` : ""
+    if (window.location.hash !== hash)
+      history.pushState(null, "", window.location.pathname + hash)
 
     this.clear()
   }

@@ -41,6 +41,7 @@ export function initMenu(sequencePlayer) {
     // Fill menu
     const authorNames = sequencePlayer.sequences
         .map((item) => item.author)
+        .sort()
         .filter((value, index, self) => self.indexOf(value) === index);
 
     const liElements = authorNames.map(

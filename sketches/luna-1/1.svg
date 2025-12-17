@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 78.98 128.23">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-3 {
+        fill: #00bf31;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke: red;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #fdfdfd;
+      }
+
+      .cls-8 {
+        fill: red;
+      }
+
+      .cls-9 {
+        opacity: 0;
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-4" d="M32.49,114.83V45.21H10.44c-5.49,0-9.94-4.45-9.94-9.94h0c0-5.08,3.83-9.3,8.88-9.88,1.39-.16,2.76-.37,4.12-.62,4.18-.79,7.94-2.18,11.27-4.18,3.33-2,6.15-4.63,8.45-7.91,1.03-1.46,1.9-3.08,2.61-4.85,1.78-4.42,6.05-7.33,10.82-7.33h0c6.44,0,11.66,5.22,11.66,11.66v102.67c0,7.13-5.78,12.91-12.91,12.91h0c-7.13,0-12.91-5.78-12.91-12.91Z"/>
+    </clipPath>
+    <filter id="luminosity-noclip" x=".5" y="0" width="78.48" height="128.23" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1=".5" y1="64.12" x2="58.3" y2="64.12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".98" stop-color="#000"/>
+      <stop offset=".99" stop-color="#010101"/>
+      <stop offset=".99" stop-color="#080808"/>
+      <stop offset=".99" stop-color="#141414"/>
+      <stop offset=".99" stop-color="#252525"/>
+      <stop offset=".99" stop-color="#3b3b3b"/>
+      <stop offset="1" stop-color="#565656"/>
+      <stop offset="1" stop-color="#777"/>
+      <stop offset="1" stop-color="#9c9c9c"/>
+      <stop offset="1" stop-color="#c7c7c7"/>
+      <stop offset="1" stop-color="#f5f5f5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="mask" x=".5" y="0" width="78.48" height="128.23" maskUnits="userSpaceOnUse">
+      <g class="cls-2">
+        <g>
+          <rect class="cls-7" x=".5" y=".5" width="77.98" height="127.23"/>
+          <rect class="cls-6" x=".5" y=".5" width="57.8" height="127.23"/>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <g class="cls-10">
+          <g>
+            <rect class="cls-7" x="-32.51" y="-16.88" width="72" height="54"/>
+            <polygon class="cls-8" points="39.49 37.12 -32.51 37.12 39.49 10.12 39.49 37.12"/>
+            <polygon class="cls-8" points="-32.51 -16.88 39.49 -16.88 -32.51 10.12 -32.51 -16.88"/>
+            <rect class="cls-7" x="-32.51" y="37.12" width="72" height="54"/>
+            <polygon class="cls-8" points="39.49 91.12 -32.51 91.12 39.49 64.12 39.49 91.12"/>
+            <polygon class="cls-8" points="-32.51 37.12 39.49 37.12 -32.51 64.12 -32.51 37.12"/>
+            <rect class="cls-7" x="-32.51" y="91.12" width="72" height="54"/>
+            <polygon class="cls-8" points="39.49 145.12 -32.51 145.12 39.49 118.12 39.49 145.12"/>
+            <polygon class="cls-8" points="-32.51 91.12 39.49 91.12 -32.51 118.12 -32.51 91.12"/>
+            <rect class="cls-8" x="39.49" y="-16.88" width="72" height="54"/>
+            <polygon class="cls-7" points="111.49 37.12 39.49 37.12 111.49 10.12 111.49 37.12"/>
+            <polygon class="cls-7" points="39.49 -16.88 111.49 -16.88 39.49 10.12 39.49 -16.88"/>
+            <rect class="cls-8" x="39.49" y="37.12" width="72" height="54"/>
+            <polygon class="cls-7" points="111.49 91.12 39.49 91.12 111.49 64.12 111.49 91.12"/>
+            <polygon class="cls-7" points="39.49 37.12 111.49 37.12 39.49 64.12 39.49 37.12"/>
+            <rect class="cls-8" x="39.49" y="91.12" width="72" height="54"/>
+            <polygon class="cls-7" points="111.49 145.12 39.49 145.12 111.49 118.12 111.49 145.12"/>
+            <polygon class="cls-7" points="39.49 91.12 111.49 91.12 39.49 118.12 39.49 91.12"/>
+          </g>
+        </g>
+        <path class="cls-4" d="M32.49,114.83V45.21H10.44c-5.49,0-9.94-4.45-9.94-9.94h0c0-5.08,3.83-9.3,8.88-9.88,1.39-.16,2.76-.37,4.12-.62,4.18-.79,7.94-2.18,11.27-4.18,3.33-2,6.15-4.63,8.45-7.91,1.03-1.46,1.9-3.08,2.61-4.85,1.78-4.42,6.05-7.33,10.82-7.33h0c6.44,0,11.66,5.22,11.66,11.66v102.67c0,7.13-5.78,12.91-12.91,12.91h0c-7.13,0-12.91-5.78-12.91-12.91Z"/>
+      </g>
+      <g class="cls-1">
+        <g id="Expanded_Art" data-name="Expanded Art" class="cls-9">
+          <polygon class="cls-3" points="57.12 119.78 57.12 7.46 58.11 10.75 58.11 116.49 57.12 119.78"/>
+          <polygon class="cls-5" points="57.12 127.73 57.12 119.78 58.11 116.49 58.11 10.75 57.12 7.46 57.12 .5 78.48 .5 78.48 127.73 57.12 127.73"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
